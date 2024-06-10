@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "./globals.css"
 
 interface Meme {
   title: string;
@@ -43,7 +44,7 @@ export default function Home() {
       {meme ? (
         <div>
           <h1 className="text-2xl">{meme.title}</h1>
-          <img className="w-[25rem]" src={meme.url} alt={meme.title} />
+          <img className="image" src={meme.url} alt={meme.title} />
         </div>
       ) : (
         <p>No meme available</p>
