@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <div>
-      <Button onClick={() => getMeme()}>
+      <Button onClick={() => getMeme()} variant={"default"}>
         Get Another meme
       </Button>
       {meme ? (
