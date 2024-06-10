@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 interface Meme {
   title: string;
   url: string;
-  [key: string]: any; // To handle any additional properties
+  [key: string]: any;
 }
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
       {meme ? (
         <div>
           <h1 className="text-2xl">{meme.title}</h1>
-          <img src={meme.url} alt={meme.title} />
+          <img className="w-[25rem]" src={meme.url} alt={meme.title} />
         </div>
       ) : (
         <p>No meme available</p>
